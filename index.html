@@ -71,7 +71,7 @@
     </nav>
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
+            <div class="row row-header align-items-center">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -85,13 +85,64 @@
                     <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve Table</a>
                 </div>
             </div>
-
         </div>
     </header>
     <section>
         <div class="container">
+            <div class="row row-content">
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Uthappizza
+                                        <span class="badge badge-danger">HOT</span>
+                                        <span class="badge badge-pill badge-default">$4.99</span>
+                                    </h2>
+                                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/buffet.png" alt="Weekend Grand Buffet">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Weekend Grand Buffet
+                                        <span class="badge badge-danger">NEW</span>
+                                    </h2>
+                                    <p class="d-none d-sm-block">Featuring mouthwatering combination with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/alberto.png" alt="Alberto Somayya">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Alberto Somayya</h2>
+                                    <p class="d-none d-sm-block">Featuring mouthwatering combination with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <li data-target="#mycarousel" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row row-content align-items-center">
-                <div class="media">
+                <div class="col-12 col-md-2 order-md-last">
+                    <h2>Our Lipsmacking Culinary Creations</h2>
+                </div>
+                <div class="media col-12 col-md-8 order-md-first">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
@@ -99,9 +150,25 @@
                     </div>
                 </div>
             </div>
-
             <div class="row row-content align-items-center">
-                <div class="media">
+                <div class="col-7 col-md-3">
+                    <h2>This Month's Promotions</h2>
+                </div>
+                <div class="media col-12 col-md-8">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combination with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                    </div>
+                    <div>
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Weekend Grand Buffet">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-md-2 order-md-last">
+                    <h2>Meet our Culinary Specialists</h2>
+                </div>
+                <div class="media col-12 col-md-8 order-md-first">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
@@ -111,23 +178,69 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-4 col-md-3 order-sm-last"></div>
-                <div class="col col-sm col-md order-sm-first"></div>
+            <div class="col-md-6 row row-content">
+                <div class="form-control p-0" id="reserveform">
+                    <h3 class="text-white bg-warning p-2">Reserve a Table</h3>
+
+                    <div class="col-12 col-md-10">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numberOfGuests" class="col-md-3 col-form-label">Number of Guests</label>
+                                <div class="col-md-9">
+                                    <input type="radio"> 1
+                                    <input type="radio"> 2
+                                    <input type="radio"> 3
+                                    <input type="radio"> 4
+                                    <input type="radio"> 5
+                                    <input type="radio"> 6
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group row">
+                                <label for="dateAndTime" class="col-md-3 col-form-label">Date and Time</label>
+                                <div class="col-8 col-md-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-8 col-md-4">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-group row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-9">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="footer   ">
+    <footer class="footer">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4 offset col-sm-2">
-                    <ul class="list-unstyled"></ul>
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="col-7 col-sm-5">
-                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                    <i class="fa fa-envelope fa-lg"></i>:
-                    <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
@@ -139,7 +252,11 @@
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
-                <div class="col-auto text-center"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
             </div>
         </div>
     </footer>
